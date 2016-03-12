@@ -1,0 +1,48 @@
+### development artifacts ###
+build
+node
+node_modules
+tmp
+./asset/
+
+### SASS ###
+*.sass-cache
+
+### Logs ###
+logs
+*.log
+npm-debug.log*
+
+
+# IntelliJ / Webstorm
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+
+
+### OS specific ###
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+
+# Windows
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+target/
