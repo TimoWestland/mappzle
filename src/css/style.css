@@ -1,0 +1,59 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.info {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+}
+
+.info__title {
+    display: block;
+    float: left;
+}
+
+.info__location {
+    text-align: right;
+    display: block;
+    float: right;
+}
+
+.target {
+    height: 70vh;
+    background-color: #EEEEEE;
+}
+
+.bucket {
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 5px;
+}
+
+.bucket__item {
+    background-color: #CCCCCC;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.bucket__item + .bucket__item {
+    margin-left: 5px;
+}
+
+
+.overview-button-wrapper {
+
+}
+
+.bucket-overview {
+}
