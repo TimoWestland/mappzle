@@ -30,13 +30,16 @@
 .target {
     height: 70vh;
     background-color: #EEEEEE;
+    position: relative;
+    z-index: 0;
 }
 
 .bucket {
     white-space: nowrap;
-    overflow-x: auto;
     background-color: rgba(0, 0, 0, .5);
     padding: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .bucket__item {
@@ -46,14 +49,40 @@
     display: inline-block;
 }
 
+img.tile {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left:0px;
+    top:0px;
+}
+
+.bucket__item > img.tile:not(.dragging){
+    transition: left 0.5s, top 0.5s;
+}
+
 .bucket__item + .bucket__item {
     margin-left: 5px;
 }
-
 
 .overview-button-wrapper {
 
 }
 
 .bucket-overview {
+
 }
+
+.target {
+    position: relative;
+    z-index: 0;
+}
+
+.target > div {
+    width: 100px;
+    height: 100px;
+    background-color: #EEE;
+    float: left;
+    position: relative;
+}
+
